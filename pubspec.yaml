@@ -1,0 +1,69 @@
+name: ddea_official
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^1.1.4
+  firebase_core: ^1.21.1
+  cloud_firestore: ^3.4.9
+  get: ^4.6.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+  fonts:
+    - family: Metropolis
+      fonts:
+        - asset: fonts/Metropolis-Black.otf
+        - asset: fonts/Metropolis-BlackItalic.otf
+        - asset: fonts/Metropolis-Bold.otf
+          weight: 700
+        - asset: fonts/Metropolis-ExtraBold.otf
+        - asset: fonts/Metropolis-ExtraBoldItalic.otf
+        - asset: fonts/Metropolis-BoldItalic.otf
+        - asset: fonts/Metropolis-ExtraLight.otf
+        - asset: fonts/Metropolis-ExtraLightItalic.otf
+        - asset: fonts/Metropolis-Light.otf
+        - asset: fonts/Metropolis-LightItalic.otf
+        - asset: fonts/Metropolis-Medium.otf
+          weight: 500
+        - asset: fonts/Metropolis-MediumItalic.otf
+        - asset: fonts/Metropolis-Regular.otf
+          weight: 400
+        - asset: fonts/Metropolis-RegularItalic.otf
+        - asset: fonts/Metropolis-SemiBold.otf
+          weight: 600
+        - asset: fonts/Metropolis-SemiBoldItalic.otf
+        - asset: fonts/Metropolis-Thin.otf
+        - asset: fonts/Metropolis-ThinItalic.otf

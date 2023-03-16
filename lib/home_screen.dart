@@ -1,3 +1,4 @@
+import 'package:ddea_official/components/appbar_template.dart';
 import 'package:ddea_official/constants/color_system.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -13,22 +14,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(70.0),
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.only(left: 20, top: 30, bottom: 20),
-            child: Text(
-              "Hi, Michael Yeboah",
-              style: TextStyle(
-                color: ColorSystem.black,
-                fontSize: 20.0,
-                fontFamily: 'Metropolis',
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ),
-        ),
+      appBar: const PreferredSize(
+        preferredSize: Size.fromHeight(70.0),
+        child: AppbarTemplate(appBarTitle: "Hi, Michael Yeboah"),
       ),
       body: GestureDetector(
         onTap: () {
@@ -60,13 +48,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8.0),
                         color: ColorSystem.hintTextColor),
-                    /* child: ClipRRect(
+                    child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      /* child: FittedBox(
+                      child: FittedBox(
                         fit: BoxFit.fill,
-                        child: Image.asset("assets/coptheme.jpeg"),
-                      ), */
-                    ), */
+                        child: Image.asset("assets/newtheme.png"),
+                      ),
+                    ),
                   ),
                   const SizedBox(
                     height: 20,
@@ -89,13 +77,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8.0),
                         color: ColorSystem.hintTextColor),
-                    /* child: ClipRRect(
+                    child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      /* child: FittedBox(
+                      child: FittedBox(
                         fit: BoxFit.fill,
-                        child: Image.asset("assets/coptheme.jpeg"),
-                      ), */
-                    ), */
+                        child: Image.asset("assets/dayscripture.jpeg"),
+                      ),
+                    ),
                   ),
                   const SizedBox(
                     height: 20,
